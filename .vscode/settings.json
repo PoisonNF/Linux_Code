@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "error_functions.h": "c",
+        "tlpi_hdr.h": "c"
+    }
+}
