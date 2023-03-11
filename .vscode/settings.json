@@ -1,6 +1,13 @@
 {
     "files.associations": {
         "error_functions.h": "c",
-        "tlpi_hdr.h": "c"
+        "tlpi_hdr.h": "c",
+        "fcntl.h": "c",
+        "stat.h": "c",
+        "ioctl.h": "c",
+        "ioctls.h": "c",
+        "ioctl-types.h": "c",
+        "uio.h": "c",
+        "struct_iovec.h": "c"
     }
 }

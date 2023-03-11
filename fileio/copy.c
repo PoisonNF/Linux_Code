@@ -1,5 +1,5 @@
 /* Code4-1 P57 */
-/* & ./copy oldfile newfile */
+/* ./copy oldfile newfile */
 #include <sys/stat.h>
 #include <fcntl.h>
 #include "../lib/tlpi_hdr.h"
