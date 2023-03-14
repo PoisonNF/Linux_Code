@@ -8,6 +8,8 @@
         "ioctls.h": "c",
         "ioctl-types.h": "c",
         "uio.h": "c",
-        "struct_iovec.h": "c"
+        "struct_iovec.h": "c",
+        "ugpid_functions.h": "c",
+        "types.h": "c"
     }
 }
