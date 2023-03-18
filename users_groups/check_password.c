@@ -54,7 +54,7 @@ int main(int argc,char *argv[])
     encryped = crypt(password,pwd->pw_passwd);
 
     for(p = password;*p != '\0';p++)
-        *p = '\0';
+        *p = '\0';       /* delete password quickly */
 
     if(encryped == NULL)
         printf("crypt");
