@@ -11,6 +11,9 @@
         "struct_iovec.h": "c",
         "ugpid_functions.h": "c",
         "types.h": "c",
-        "utsname.h": "c"
+        "utsname.h": "c",
+        "mount.h": "c",
+        "statvfs.h": "c",
+        "file_perms.h": "c"
     }
 }
