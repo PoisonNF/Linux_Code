@@ -14,6 +14,7 @@
         "utsname.h": "c",
         "mount.h": "c",
         "statvfs.h": "c",
-        "file_perms.h": "c"
+        "file_perms.h": "c",
+        "ugid_functions.h": "c"
     }
 }
