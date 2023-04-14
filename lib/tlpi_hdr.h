@@ -13,10 +13,10 @@
 
 #include "error_functions.h"    /*Declars our error-handing functions*/
 
-typedef enum {
-    FALSE,
-    TRUE
-}Boolean;
+// typedef enum {
+//     FALSE,
+//     TRUE
+// }Boolean;
 
 #define min(m, n) ((m) < (n) ? (m) : (n))
 #define max(m, n) ((m) > (n) ? (m) : (n))
