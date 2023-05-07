@@ -2,12 +2,13 @@
 #include "error_functions.h"
 #include "tlpi_hdr.h"
 #include "ename.c.inc"
+#include <stdbool.h>
 
 #ifdef __GNUC__
 __attribute__ ((__noreturn__))
 #endif // __GNUC__
 
-static void terminate(Boolean useExit3)
+static void terminate(bool useExit3)
 {
     char *s;
 
@@ -22,7 +23,7 @@ static void terminate(Boolean useExit3)
 }
 
 static void 
-outputError(Boolean useErr, int err, Boolean flushStdout,
+outputError(bool useErr, int err, bool flushStdout,
                 const char *format, va_list ap) {
 #define BUF_SIZE 500
     char buf[BUF_SIZE], userMsg[BUF_SIZE], errText[BUF_SIZE];
@@ -52,7 +53,7 @@ void errMsg(const char*format, ...) {
 
     saveErrno = errno;
     va_start(argList, format);
-    outputError(TRUE, errno, TRUE, format, argList);
+    outputError(true, errno, true, format, argList);
     va_end(argList);
 
     errno = saveErrno;
@@ -63,10 +64,10 @@ errExit(const char *format, ...) {
     va_list argList;
 
     va_start(argList, format);
-    outputError(TRUE, errno, TRUE, format, argList);
+    outputError(true, errno, true, format, argList);
     va_end(argList);
 
-    terminate(TRUE);
+    terminate(true);
 }
 
 void
@@ -74,10 +75,10 @@ err_exit(const char *format, ...) {
     va_list argList;
 
     va_start(argList, format);
-    outputError(TRUE, errno, FALSE, format, argList);
+    outputError(true, errno, false, format, argList);
     va_end(argList);
 
-    terminate(FALSE);
+    terminate(false);
 }
 
 void
@@ -85,10 +86,10 @@ errExitEN(int errnum, const char *format, ...) {
     va_list argList;
 
     va_start(argList, format);
-    outputError(TRUE, errnum, TRUE, format, argList);
+    outputError(true, errnum, true, format, argList);
     va_end(argList);
 
-    terminate(TRUE);
+    terminate(true);
 }
 
 void 
@@ -96,10 +97,10 @@ fatal(const char *format, ...) {
     va_list argList;
 
     va_start(argList, format);
-    outputError(FALSE, 0, TRUE, format, argList);
+    outputError(false, 0, true, format, argList);
     va_end(argList);
 
-    terminate(TRUE);
+    terminate(true);
 }
 
 void 

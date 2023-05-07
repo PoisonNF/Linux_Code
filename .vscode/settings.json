@@ -15,6 +15,18 @@
         "mount.h": "c",
         "statvfs.h": "c",
         "file_perms.h": "c",
-        "ugid_functions.h": "c"
+        "ugid_functions.h": "c",
+        "signal.h": "c",
+        "errno.h": "c",
+        "signal_functions.h": "c",
+        "unistd.h": "c",
+        "signalfd.h": "c",
+        "time.h": "c",
+        "itimerspec_from_str.h": "c",
+        "print_wait_status.h": "c",
+        "acct.h": "c",
+        "limits.h": "c",
+        "sched.h": "c",
+        "stdbool.h": "c"
     }
 }
