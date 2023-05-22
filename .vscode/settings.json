@@ -27,6 +27,9 @@
         "acct.h": "c",
         "limits.h": "c",
         "sched.h": "c",
-        "stdbool.h": "c"
+        "stdbool.h": "c",
+        "wait.h": "c",
+        "fifo_seqnum.h": "c",
+        "mqueue.h": "c"
     }
 }
